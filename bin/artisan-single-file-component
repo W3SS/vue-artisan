@@ -3,7 +3,7 @@
 var program = require('commander')
 var path = require('path')
 var fs = require('fs')
-var upperCamelCase = require('uppercamelcase')
+var camelCase = require('camelcase')
 
 var mkdir = function (dist, mode, callback) {
   dist = path.resolve(dist);
@@ -32,7 +32,7 @@ program
   .parse(process.argv)
 
 var args = program.args
-var name = upperCamelCase(args[0])
+var name = camelCase(args[0])
 
 if (!args.length) {
   console.error('component name required!')

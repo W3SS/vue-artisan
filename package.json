@@ -17,6 +17,7 @@
   "author": "dearmadman",
   "license": "MIT",
   "dependencies": {
+    "camelcase": "^3.0.0",
     "commander": "^2.9.0",
     "uppercamelcase": "^1.1.0"
   },

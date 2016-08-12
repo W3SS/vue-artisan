@@ -8,5 +8,6 @@ program
 
 program
   .command('component [name]', 'generate a new component')
+  .command('single-file-component [name]', 'generate a new single file component')
 
 program.parse(process.argv)
